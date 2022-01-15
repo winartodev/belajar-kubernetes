@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: finance 
+  namespace: finance
+spec:
+  containers:
+    - name: finance 
+      image: nginx
+      containerPort: 80

@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-with-annotation
+  labels:
+    name: nginx-with-annotation
+  annotations:
+    description: this is nginx with annotations
+    jsonFile: json file
+spec:
+  containers:
+  - name: nginx-with-annotation
+    image: nginx
+    ports:
+      - containerPort: 80
